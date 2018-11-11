@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,11 +13,7 @@ namespace RHRuns
 
         public Run(int maal)
         {
-            Runs = new List<int>(maal);
-        }
-        public Run()
-        {
-
+            Runs = new List<int> { maal };
         }
 
         public static Run UpperBoundIncrease(Run lastRun, Run newRun)
@@ -24,6 +21,5 @@ namespace RHRuns
             lastRun.Runs.AddRange(newRun.Runs);
             return lastRun;
         }
-
     }
 }
