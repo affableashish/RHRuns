@@ -16,6 +16,10 @@ namespace RHRuns
             Runs = new List<int> { maal };
         }
 
+        public Run()
+        {
+        }
+
         public static Run UpperBoundIncrease(Run lastRun, Run newRun)
         {
             lastRun.Runs.AddRange(newRun.Runs);

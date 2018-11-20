@@ -15,7 +15,8 @@ namespace RHRuns
 
             var listOfRuns = new List<Run>();
             var lastOne = orderedValues.First();
-            var lastRun = new Run(lastOne);
+            
+            Run lastRun = new Run();
 
             foreach (var currentValue in orderedValues)
             {
